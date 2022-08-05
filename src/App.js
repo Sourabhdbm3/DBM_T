@@ -6,17 +6,16 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p>Please Install these dependencies</p>
+        <table style={{textAlign: 'left'}}>
+          <ul>
+            <li>Feather for icon</li>
+            <li>Reactstrap for componenet</li>
+            <li>Bootstrap for styling</li>
+          </ul>
+        </table>
+        <p>          After this ☝️
+          Make Your Own Route & start Working</p>
       </header>
     </div>
   );
