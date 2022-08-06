@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Login from './Components/Login';
+import Dashboard from './Components/Dashboard';
+import Attendance from './Components/Attendance';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Please Install these dependencies</p>
-        <table style={{textAlign: 'left'}}>
-          <ul>
-            <li>Feather for icon</li>
-            <li>Reactstrap for componenet</li>
-            <li>Bootstrap for styling</li>
-          </ul>
-        </table>
-        <p>          After this ☝️
-          Make Your Own Route & start Working</p>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/">
+            <Route index element={<Login />} />
+            {/* ------------------------------- Using loop proccess--------------------------- */}
+            <Route path="dashboard">
+              <Route index element={<Dashboard />} />
+              <Route path="attendance" element={<Attendance />} />
+            </Route>
+            {/* ------------------------------- Using loop proccess--------------------------- */}
+
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
