@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Login from './Components/Login';
 import Dashboard from './Components/Dashboard';
 import Attendance from './Components/Attendance';
+import Help from './Components/Help';
 
 function App() {
   return (
@@ -14,9 +15,8 @@ function App() {
             <Route path="dashboard">
               <Route index element={<Dashboard />} />
               <Route path="attendance" element={<Attendance />} />
+              <Route path="help" element={<Help />} />
             </Route>
-            {/* ------------------------------- Using loop proccess--------------------------- */}
-
           </Route>
         </Routes>
       </BrowserRouter>
