@@ -4,6 +4,8 @@ import Login from './Components/Login';
 import Dashboard from './Components/Dashboard';
 import Attendance from './Components/Attendance';
 import Leave from './Components/Leave';
+import Help from './Components/Help';
+
 
 function App() {
   return (
@@ -17,9 +19,10 @@ function App() {
               <Route index element={<Dashboard />} />
               <Route path="attendance" element={<Attendance />} />
               <Route path="Leave" element={<Leave />} />
-            </Route>
-            {/* ------------------------------- Using loop proccess--------------------------- */}
 
+              <Route path="help" element={<Help />} />
+
+            </Route>
           </Route>
         </Routes>
       </BrowserRouter>
