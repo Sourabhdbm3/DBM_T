@@ -5,15 +5,17 @@
 
 }
 
-.body {
+.body_card {
 
-  background-color: white
+  background-color: white;
+
 }
 
 .search {
   color: blue;
 
 }
-/* .class{
- width: 1090px;
-} */
+.Row{
+  margin-left: 4px;
+  margin-right: 4px;
+}
