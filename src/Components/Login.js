@@ -5,7 +5,7 @@ const login = () => {
   return (
     <>
       <div className='container'>
-        <div className='row' >
+        <div className='row row_container' >
           <div className='col-md-4 col'>
             <div className='logo'>
               <img src="https://img.freepik.com/free-vector/access-control-system-abstract-concept_335657-3180.jpg" alt="img" className='img-fluid' />

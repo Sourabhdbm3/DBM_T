@@ -8,6 +8,8 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 
+
+
 const Sidebar = () => {
 
   return (
@@ -27,19 +29,19 @@ const Sidebar = () => {
               <span>Dashboard</span>
             </li>
             <p className="title">SERVICE</p>
-            <Link to="/Attendance" style={{ textDecoration: "none" }}>
+            <Link to="/dashboard/Attendance" style={{ textDecoration: "none" }}>
               <li>
                 <AccessibilityNewOutlined className="icon" />
                 <span>Attendance</span>
               </li>
             </Link>
-            <Link to="/Leave" style={{ textDecoration: "none" }}>
+            <Link to="/dashboard/Leave" style={{ textDecoration: "none" }}>
               <li>
                 <PanTool className="icon" />
                 <span>Leave</span>
               </li>
             </Link>
-            <Link to="/HelpDesk" style={{ textDecoration: "none" }}>
+            <Link to="/dashboard/HelpDesk" style={{ textDecoration: "none" }}>
               <li>
                 <HelpCenter className="icon" />
                 <span>HelpDesk</span>

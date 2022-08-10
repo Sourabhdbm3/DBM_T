@@ -1,32 +1,49 @@
-
 import React from 'react'
-import { CardTitle,Row,Col,Card,CardText,Button } from 'reactstrap'
+import { Row, Col, Container, Card, CardBody, CardTitle, Button } from 'reactstrap'
 
 
-const AdminCard = () => {
+
+const AdminCard = (props) => {
     return (
         <>
-            {/* <div className='ABC'>
-                <Card sx={{ maxWidth: 200 }}>
-                    <CardMedia
-                        component="img"
-                        alt="att"
-                        height="40"
-                        image=""
-                    />
-                    <CardContent>
-                        <Typography variant='h5' component='div'>
-                            Attendance
-                        </Typography>
-                    </CardContent>
-                    <CardActions>
-                        <Button size='small'>share</Button>
-                    </CardActions>
+            <Container className='mt-5'>
+                <Row className="rowContainer">
+                    <Col sm="4" >
+                        <Card
+                            style={{
+                                width: '18rem'
+                            }}
+                        >
+                            <img
+                                alt="Sample"
+                                src={props.imgsrc}
+                            />
+                            <CardBody>
+                                <CardTitle tag="h3">
+                                    {props.title}
 
-                </Card>
+                                </CardTitle>
+                                <Button>
+                                    {props.btn}
+                                </Button>
+                            </CardBody>
+                        </Card>
 
-            </div> */}
-         
+                    </Col>
+                    {/* <Col sm="4" >
+                        <h1>this is 1st</h1>
+
+                    </Col>
+                    <Col sm="4" >
+                        <h1>this is 1st</h1>
+
+                    </Col> */}
+                </Row>
+
+            </Container>
+
+
+
 
 
 
