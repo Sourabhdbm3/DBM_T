@@ -12,6 +12,7 @@ code {
     monospace;
 }
 
+
 .row {
   min-height: 100vh;
   justify-content: center;
@@ -191,3 +192,4 @@ input::placeholder {
 }
 
 /*----------------- navbar_css -----------------*/
+
