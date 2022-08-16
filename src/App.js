@@ -5,6 +5,8 @@ import Dashboard from './Components/Dashboard';
 import Attendance from './Components/Attendance';
 import Leave from './Components/Leave';
 import Help from './Components/Help';
+import './Ashish.css'
+
 
 
 function App() {

@@ -1,7 +1,15 @@
 @import url("https://cdn.syncfusion.com/ej2/material.css");
 
+
 .container {
   background-color: whitesmoke;
+
+
+.card{
+  display: flex;
+  margin-top: 40px;
+  box-shadow: 2px;
+
 
 }
 
